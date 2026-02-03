@@ -78,7 +78,7 @@ def calculate_metrics():
 metrics = calculate_metrics()
 
 # --- STEP 3: GEMINI AI INTEGRATION ---
-if st.button("Analyze Deal & Generate Gamma Deck"):
+if st.button("Analyze Deal & Generate Investor Deck"):
     if metrics:
         with st.spinner('Crunching numbers and drafting pitch deck...'):
             
@@ -123,5 +123,6 @@ if st.button("Analyze Deal & Generate Gamma Deck"):
             
     else:
         st.error("Please fill in Price and Rent to calculate.")
+
 
 
