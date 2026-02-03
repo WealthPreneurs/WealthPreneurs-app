@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 import numpy_financial as npf
 
-GOOGLE_API_KEY = st.secrets[GOOGLE_API_KEY]
+GOOGLE_API_KEY = st.secrets["AIzaSyC3T2z6-kDq9hvftf2uaZ_QBFCQI92sYTA"]
 model = genai.GenerativeModel('gemini-1.5-pro-latest')
 
 # App Styling
@@ -123,3 +123,4 @@ if st.button("Analyze Deal & Generate Gamma Deck"):
             
     else:
         st.error("Please fill in Price and Rent to calculate.")
+
