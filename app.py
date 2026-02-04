@@ -102,7 +102,7 @@ if st.button("Analyze Deal & Generate Investor Deck"):
             Use 'Card' or 'Slide' headers. Include a 'One Page Teaser' section at the start.
             """
             
-            response = model.generate_content(prompt)
+            response = model.generate_content(run property analysis)
             
             # --- DISPLAY DASHBOARD ---
             st.divider()
@@ -123,6 +123,7 @@ if st.button("Analyze Deal & Generate Investor Deck"):
             
     else:
         st.error("Please fill in Price and Rent to calculate.")
+
 
 
 
